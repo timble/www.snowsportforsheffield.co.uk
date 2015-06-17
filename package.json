@@ -1,0 +1,14 @@
+{
+    "name": "snowsportforsheffield",
+    "version": "0.0.1",
+    "description": "Static pages for snowsportforsheffield.co.uk",
+    "author": "Timble",
+    "devDependencies": {
+        "grunt": "latest",
+        "grunt-browser-sync": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-sass": "latest",
+        "grunt-shell": "latest",
+        "jit-grunt": "latest"
+    }
+}

@@ -1,0 +1,5 @@
+domain: localhost:7669
+
+compress_html:
+  ignore:
+    envs: [development]
