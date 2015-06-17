@@ -1,0 +1,114 @@
+// Accessible hide
+%accessible-hide {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+// Sticky
+.rm-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+// Overflow
+.rm-bodyoverflowhidden {
+  position: relative;
+  overflow: hidden;
+}
+
+.rm-menuoverflowauto {
+  max-height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+// Absolute menu
+.rm-absolutemenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+/* Extend the accessible hide class to the closed class */
+/* Only when JS is enabled since we add the closed class in the markup */
+/* And we want the menu to be open when JS is disabled/broken */
+.js-enabled:not(.rm-no-responsive-menu) {
+  .rm-closed {
+    @extend %accessible-hide;
+  }
+}
+
+/* hide the buttons when closed so they wont show up in tabindex */
+button.rm-closed {
+  display: none;
+}
+
+/* The menu itself */
+.navigation_container {
+
+  li {
+    position: relative;
+
+    /* initially hide all li>ul so we get a small list when JS is disabled */
+    ul {
+      display: none;
+    }
+
+    /* And show them on active/current items */
+    &.active,
+    &.current {
+      & > ul {
+        display: block;
+      }
+    }
+  }
+
+  // Show li ul on small screens when JS is enabled
+  &.rm-initiated {
+    ul {
+      display: block;
+
+      .rm-focused {
+        overflow: visible;
+      }
+    }
+  }
+
+  .rm-closed, // For JS disabled/broken browsers
+  .rm-fullmenu { // For all the other ones
+
+    li {
+      overflow: hidden;
+    }
+
+    /* Hide li ul when JS is enabled and screen is big */
+    ul {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      z-index: 9;
+
+      /* Position li>li>ul */
+      ul {
+        left: 100%;
+        top: 0;
+      }
+    }
+
+    /* And show on hover */
+    li:hover,
+    li:focus {
+      overflow: visible;
+    }
+  }
+}

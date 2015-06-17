@@ -13,7 +13,7 @@ module.exports = function(grunt) {
             },
             main: {
                 files: [{
-                    '_jekyll/css/style.css': '_scss/style.scss'
+                    'css/style.css': '_scss/style.scss'
                 }]
             }
         },
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
                     '_scss/style.scss',
                     '_scss/**/*.scss'
                 ],
-                tasks: ['sass:main', 'autoprefixer'],
+                tasks: ['sass'],
                 options: {
                     interrupt: true,
                     atBegin: true
@@ -61,6 +61,16 @@ module.exports = function(grunt) {
             },
             jekyll: {
                 files: [
+                    '*.html',
+                    '*.css',
+                    '*.js',
+                    '*.md',
+                    '*.json',
+                    '**/*.html',
+                    '**/*.css',
+                    '**/*.js',
+                    '**/*.md',
+                    '**/*.json',
                     '_config.yml',
                     '_config.dev.yml'
                 ],
