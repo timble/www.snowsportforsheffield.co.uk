@@ -10,9 +10,17 @@ a {
   color: $color-blue;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: $color-blue;
-  margin: 0 0 .5em;
+  margin: 0 0 .65em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p {
+  margin: 0 0 $spacing;
 
   &:last-child {
     margin-bottom: 0;
@@ -80,7 +88,7 @@ body {
 
 .container {
   @include clearfix;
-  padding: $spacing;
+  padding: $spacing-large;
   max-width: $maxwidth;
   margin: auto;
 }
@@ -90,6 +98,7 @@ body {
     float: left;
     width: 35%;
     margin-left: -100%;
+    padding-right: $spacing-large;
   }
 
   @include breakpoint($delta) {
@@ -112,4 +121,43 @@ body {
 
 .fb-video {
   margin-bottom: $spacing;
+}
+
+.voices {
+  margin-bottom: $spacing;
+
+  blockquote {
+    @include reset;
+    background: #EFEFEF;
+    padding: 1em;
+    margin: 3em 0;
+    quotes: "\201C""\201D""\2018""\2019";
+    position: relative;
+
+    &:before,
+    &:after {
+      display: block;
+      position: absolute;
+      font-size: 60px;
+      line-height: 1em;
+      color: $color-blue;
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
+
+    &:before {
+      content: open-quote;
+      bottom: 100%;
+    }
+
+    &:after {
+      content: close-quote;
+      top: 100%;
+      right: 0;
+    }
+  }
+}
+
+.add-your-voice {
+  position: relative;
+  top: -2em;
 }

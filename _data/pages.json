@@ -1,0 +1,32 @@
+{
+  "header": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "About us",
+      "url": "/about-us"
+    },
+    {
+      "text": "How can you help",
+      "url": "/how-can-you-help"
+    },
+    {
+      "text": "Partners",
+      "url": "/partners"
+    },
+    {
+      "text": "Media",
+      "url": "/media"
+    },
+    {
+      "text": "Twitter",
+      "url": "/twitter"
+    },
+    {
+      "text": "Contact us",
+      "url": "/contact-us"
+    }
+  ]
+}
