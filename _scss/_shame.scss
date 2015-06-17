@@ -36,11 +36,13 @@ body {
 // Header
 .header {
   background: $color-blue;
+  margin: auto;
 }
 
 .header__content {
   max-width: $maxwidth;
   margin: auto;
+  padding: 0 15px;
 }
 
 
@@ -88,7 +90,7 @@ body {
 
 .container {
   @include clearfix;
-  padding: $spacing-large;
+  padding: $spacing-large 15px;
   max-width: $maxwidth;
   margin: auto;
 }
