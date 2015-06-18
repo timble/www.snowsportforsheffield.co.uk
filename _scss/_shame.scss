@@ -146,3 +146,34 @@ body {
     border-top: 1px solid $color-secondary-dark;
     border-bottom: 1px solid $color-secondary-dark;
 }
+
+.hero {
+    background-color: $color-secondary-light;
+    border-bottom: 1px solid $color-secondary;
+
+    text-align: center;
+    color: white;
+    font-size: 18px;
+
+    .container {
+        max-width: 600px;
+    }
+}
+
+.hero__title {
+    color: white;
+}
+
+.hero__content {
+    margin-bottom: $spacing-large;
+}
+
+.button {
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid $color-secondary;
+
+    padding: 8px 16px;
+
+    text-decoration: none;
+}
