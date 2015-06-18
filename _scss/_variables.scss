@@ -1,14 +1,27 @@
 $font: 'Open Sans', 'Helvetica', Arial, sans-serif;
 
-$color-blue: #2789C8;
+$color-primary: #2089C7;
+$color-primary-light: lighten($color-primary, 15%);
+
+$color-secondary: #22496B;
+$color-secondary-dark: darken($color-secondary, 15%);
+
 $color-type: #333333;
 
 $spacing: 24px;
 $spacing-large: 48px;
 
-$maxwidth: 1200px;
+$maxwidth: 800px;
 
 $alpha: 400px;
 $beta: 600px;
 $charlie: 768px;
 $delta: 1024px;
+
+$gutter-width: 8em;
+
+// Susy grid
+$susy: (
+  gutters: $gutter-width/4em,
+  gutter-position: before
+);

@@ -7,11 +7,11 @@ img {
 }
 
 a {
-  color: $color-blue;
+  color: $color-primary;
 }
 
 h1, h2, h3 {
-  color: $color-blue;
+  color: $color-primary;
   margin: 0 0 .65em;
 
   &:last-child {
@@ -35,7 +35,7 @@ body {
 
 // Header
 .header {
-  background: $color-blue;
+  background: $color-primary;
   margin: auto;
 }
 
@@ -48,7 +48,7 @@ body {
 
 // Logo
 .logo {
-  background: $color-blue;
+  background: $color-primary;
 
   img {
     vertical-align: middle;
@@ -65,7 +65,7 @@ body {
 
 // Navigation
 .navigation_container {
-  background: $color-blue;
+  background: $color-primary;
 
   ul {
     @include reset;
@@ -90,39 +90,12 @@ body {
 
 .container {
   @include clearfix;
-  padding: $spacing-large 15px;
   max-width: $maxwidth;
   margin: auto;
 }
 
-.sidebar {
-  @include breakpoint($beta) {
-    float: left;
-    width: 35%;
-    margin-left: -100%;
-    padding-right: $spacing-large;
-  }
-
-  @include breakpoint($delta) {
-    width: 25%;
-  }
-}
-
-.content {
-  @include breakpoint($beta) {
-    float: left;
-    width: 65%;
-    margin-left: 35%;
-  }
-
-  @include breakpoint($delta) {
-    width: 75%;
-    margin-left: 25%;
-  }
-}
-
-.fb-video {
-  margin-bottom: $spacing;
+.container--spaced {
+    padding: $spacing-large 15px;
 }
 
 .voices {
@@ -142,7 +115,7 @@ body {
       position: absolute;
       font-size: 60px;
       line-height: 1em;
-      color: $color-blue;
+      color: $color-primary;
       font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     }
 
@@ -162,4 +135,14 @@ body {
 .add-your-voice {
   position: relative;
   top: -2em;
+}
+
+.petition__block {
+    @include gallery(4 of 12);
+}
+
+.teaser {
+    background-color: $color-secondary;
+    border-top: 1px solid $color-secondary-dark;
+    border-bottom: 1px solid $color-secondary-dark;
 }
