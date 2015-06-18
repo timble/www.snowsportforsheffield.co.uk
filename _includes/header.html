@@ -16,18 +16,5 @@
                     <img src="/images/banner.gif" alt="Snowsport for Sheffield logo">
                 </a>
             </div>
-            <nav class="navigation_container">
-                <ul class="rm-closed">
-                    {% for item in site.data.pages.header %}
-                    {% assign current = nil %}
-                    {% if page.url contains item.url %}
-                    {% assign current = ' active' %}
-                    {% endif %}
-                    <li class="navigation__item{{ current }}">
-                        <a href="{{ item.url }}">{{ item.text }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </nav>
         </div>
     </div>
