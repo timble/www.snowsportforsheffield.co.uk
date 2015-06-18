@@ -1,0 +1,11 @@
+{
+  "name": "www.snowsportforsheffield.co.uk",
+  "description": "",
+  "homepage": "",
+  "keywords": [],
+  "author": "",
+  "private": true,
+  "devDependencies": {
+    "susy": "ericam/susy#2.2.*"
+  }
+}
