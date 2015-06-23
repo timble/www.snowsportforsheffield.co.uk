@@ -4,7 +4,7 @@
     {% for partner in partners %}
     <div class="partners__partner one-fourth">
         <a class="grayscale" href="{{ partner.url }}">
-            <img src="/assets/partners/{{ partner.name | slugify }}.png" />
+            <img src="{{ site.url }}/assets/partners/{{ partner.name | slugify }}.png" />
         </a>
     </div>
     {% endfor %}
