@@ -1,0 +1,31 @@
+- name: Timble
+  description: Web agency
+  url: http://www.timble.net
+
+- name: Add Senior
+  description: Graphic designer
+  url: http://addsenior.co.uk
+
+- name: The Lazy Fox
+  description: Print and design
+  url: http://thelazyfox.co.uk
+
+- name: Salt Street Productions
+  description: Video productions
+  url: http://www.salt-street.com
+
+- name: Snowflex
+  description: Snowsports solutions
+  url: http://www.snowflex.com
+
+- name: The Forum Cafe Bar
+  description: Food & Drinks
+  url: http://www.forumsheffield.co.uk
+
+- name: Snowsports England
+  description: Federation skiers and snowboarders
+  url: http://www.snowsportengland.org.uk
+
+- name: Rocket Print
+  description: Print & Promotions
+  url: http://www.rocketprintpromotions.com

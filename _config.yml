@@ -8,7 +8,9 @@ name: Snowsport for Sheffield
 exclude: [
   '_scss',
   'node_modules',
+  'bower_components',
   '.gitignore',
+  'bower.json',
   'Gemfile',
   'Gemfile.lock',
   'gruntfile.js',

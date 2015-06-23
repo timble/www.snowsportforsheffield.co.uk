@@ -33,6 +33,23 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.row {
+  @include container;
+}
+
+.one-half {
+  @include gallery(6 of 12);
+}
+
+.one-third {
+  @include gallery(4 of 12);
+}
+
+.one-fourth {
+  @include gallery(3 of 12);
+}
+
+
 // Header
 .header {
   margin: auto;
@@ -149,10 +166,6 @@ body {
   top: -2em;
 }
 
-.petition__block {
-    @include gallery(4 of 12);
-}
-
 .teaser {
 
 }
@@ -193,4 +206,23 @@ body {
     top: 50%;
     margin-top: -5px;
   }
+}
+
+.partners__partner {
+  height: 125px;
+  text-align: center;  /* align the inline(-block) elements horizontally */
+  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.partners__partner:before {    /* create a full-height inline block pseudo=element */
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  height: 100%;
+}
+
+.partners__partner a {
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  font: 16px/1 Arial sans-serif;        /* <-- reset the font property */
 }

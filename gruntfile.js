@@ -6,6 +6,30 @@ module.exports = function(grunt) {
     // grunt config
     grunt.initConfig({
 
+        // Copy bower files
+        copy: {
+            css: {
+                files: [
+                    {
+                        expand: true,
+                        src: ['css/*.css'],
+                        dest: '_site/css',
+                        flatten: true
+                    }
+                ]
+            },
+            js: {
+                files: [
+                    {
+                        expand: true,
+                        src: ['js/*.js'],
+                        dest: '_site/js',
+                        flatten: true
+                    }
+                ]
+            }
+        },
+
         // Sass
         sass: {
             options: {
@@ -22,7 +46,14 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src : ["_site/*.*"]
+                    src : [
+                        "_site/*.*",
+                        '_site/css/*.css',
+                        '_site/js/*.js',
+                        // Exclude for refresh so browser only refreshes once
+                        '!_site/blog.xml',
+                        '!_site/sitemap.xml'
+                    ]
                 },
                 options: {
                     port: 7669, // snow on phone keypad
@@ -53,26 +84,24 @@ module.exports = function(grunt) {
                     '_scss/style.scss',
                     '_scss/**/*.scss'
                 ],
-                tasks: ['sass'],
+                tasks: ['sass', 'copy:css'],
                 options: {
-                    interrupt: true,
+                    interrupt: false,
                     atBegin: true
                 }
             },
             jekyll: {
                 files: [
-                    '*.html',
-                    '*.css',
-                    '*.js',
-                    '*.md',
-                    '*.json',
-                    '**/*.html',
-                    '**/*.css',
-                    '**/*.js',
-                    '**/*.md',
-                    '**/*.json',
+                    // Including
+                    '_data/*.*',
+                    '_includes/*.*',
+                    '_layouts/*.*',
+                    'assets/*.*',
+                    'images/*.*',
+                    'media/*.*',
                     '_config.yml',
-                    '_config.dev.yml'
+                    '_config.dev.yml',
+                    'index.md'
                 ],
                 tasks: ['shell:jekyllBuild'],
                 options: {
