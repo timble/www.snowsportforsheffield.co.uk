@@ -1,17 +1,28 @@
+<h2>{{ site.data.petition | size}} people signed our petition!</h2>
 <div class="petition row">
-    <div class="petition__block one-third">
-        Lorem ipsum
-    </div>
-    <div class="petition__block one-third">
-        Lorem ipsum
-    </div>
-    <div class="petition__block one-third">
-        Lorem ipsum
-    </div>
-    <div class="petition__block one-third">
-        Lorem ipsum
-    </div>
-    <div class="petition__block one-third">
-        Lorem ipsum
-    </div>
+    {% assign petitions = site.data.petition | reverse  %}
+    {% for petition in petitions %}
+
+    {% if petition.Comments != nil %}
+    <figure id="petition-{% increment i %}" class="petition__quote one-half">
+        <blockquote>{{ petition.Comments }}</blockquote>
+        <figcaption>{{ petition.Name }} - {{ petition.Date | date: "%h %Y" }}</figcaption>
+    </figure>
+    {% endif %}
+
+    {% if include.developer == 'yes' %}
+    <p style="margin-top: 30px;">Also check our <a href="http://developer.joomlatools.com">developer documentation</a> where we have several articles on customizing {{ item.title }}</p>
+    {% endif %}
+
+    {% if include.limit != nil %}
+    {% if i == 6 %}
+    {% break %}
+    {% endif %}
+    {% endif %}
+
+    {% endfor %}
 </div>
+
+{% if include.limit != nil %}
+<a href="{{ site.url }}/petition.html">Read all the petitions</a>
+{% endif %}

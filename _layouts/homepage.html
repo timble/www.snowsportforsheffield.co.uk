@@ -6,10 +6,17 @@
     </div>
 </div>
 
+<div class="teaser">
+    {% include teaser.html %}
+</div>
+
 <div class="container container--spaced">
     <div class="content">
         {{ content }}
     </div>
+
+    {% include petition.html limit="6" %}
+    {% include partners.html %}
 </div>
 
 {% include footer.html %}
