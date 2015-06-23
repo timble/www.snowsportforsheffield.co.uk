@@ -13,6 +13,7 @@ a {
 h1, h2, h3 {
   color: $color-primary;
   margin: 0 0 .65em;
+  font-weight: 400;
 
   &:last-child {
     margin-bottom: 0;
@@ -21,7 +22,7 @@ h1, h2, h3 {
 
 h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 36px;
   margin: $spacing-large * 1.5 0 $spacing-large;
 }
 
@@ -32,7 +33,7 @@ p {
 body {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font;
 }
 
 figure,
@@ -153,45 +154,6 @@ blockquote {
     padding: 0 15px;
 }
 
-.voices {
-  margin-bottom: $spacing;
-
-  blockquote {
-    @include reset;
-    background: #EFEFEF;
-    padding: 1em;
-    margin: 3em 0;
-    quotes: "\201C""\201D""\2018""\2019";
-    position: relative;
-
-    &:before,
-    &:after {
-      display: block;
-      position: absolute;
-      font-size: 60px;
-      line-height: 1em;
-      color: $color-primary;
-      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    }
-
-    &:before {
-      content: open-quote;
-      bottom: 100%;
-    }
-
-    &:after {
-      content: close-quote;
-      top: 100%;
-      right: 0;
-    }
-  }
-}
-
-.add-your-voice {
-  position: relative;
-  top: -2em;
-}
-
 .teaser {
 
 }
@@ -293,9 +255,10 @@ blockquote {
 blockquote:before,
 blockquote:after {
   color: $color-primary;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 0;
   vertical-align: -0.5em;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 blockquote:before {
@@ -313,4 +276,83 @@ blockquote:after {
   color: #666;
   text-align: right;
   font-size: 14px;
+}
+
+.channels {
+  @include clearfix;
+  padding: $spacing 0 0;
+}
+
+.channel {
+  @include breakpoint($alpha) {
+    @include gallery(4 of 12);
+  }
+
+  &__item {
+    padding: $spacing 0;
+    border: 1px solid #888;
+    display: block;
+    transition: all .2s ease-in-out;
+    margin-bottom: $spacing;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  &__item--email {
+    &, &:visited {
+      background: lighten(#F58D32, 25%);
+      color: black;
+      border-color: #F58D32;
+    }
+    &:hover {
+      background: #F58D32;
+      border-color: darken(#F58D32, 20%);
+      color: white;
+    }
+  }
+  &__item--twitter {
+    &, &:visited {
+      background: lighten(#55ACEE,25%);
+      color: black;
+      border-color: #55ACEE;
+    }
+    &:hover {
+      background: #55ACEE;
+      border-color: darken(#55ACEE,20%);
+      color: white;
+    }
+  }
+  &__item--facebook {
+    &, &:visited {
+      background: lighten(#3b5998,35%);
+      color: black;
+      border-color: lighten(#3b5998,10%);
+    }
+    &:hover {
+      background: #3b5998;
+      border-color: darken(#3b5998,20%);
+      color: white;
+    }
+  }
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all .2s ease; /* Fade to color for Chrome and Safari */
+  backface-visibility: hidden; /* Fix for transition flickering in Firefox */
+
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+
+// No grayscale for iphone and ipad
+@media screen and (max-device-width: 1024px) and (orientation: landscape),
+screen and (max-device-width: 1024px) and (orientation: portrait) {
+  .grayscale {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
 }

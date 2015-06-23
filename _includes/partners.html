@@ -1,9 +1,9 @@
-<h2>Our Partners</h2>
+<h2>Our partners</h2>
 <div class="partners row">
     {% assign partners = site.data.partners | sort:"name"  %}
     {% for partner in partners %}
     <div class="partners__partner one-fourth">
-        <a href="{{ partner.url }}">
+        <a class="grayscale" href="{{ partner.url }}">
             <img src="/assets/partners/{{ partner.name | slugify }}.png" />
         </a>
     </div>
