@@ -101,7 +101,7 @@ module.exports = function(grunt) {
                     'media/*.*',
                     '_config.yml',
                     '_config.dev.yml',
-                    'index.md',
+                    'index.html',
                     'petition.html'
                 ],
                 tasks: ['shell:jekyllBuild'],

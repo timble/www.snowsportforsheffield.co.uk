@@ -19,12 +19,14 @@ h1, h2, h3 {
   }
 }
 
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: $spacing-large * 1.5 0 $spacing-large;
+}
+
 p {
   margin: 0 0 $spacing;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 body {
@@ -43,18 +45,35 @@ blockquote {
   @include container;
 }
 
-.one-half {
-  @include gallery(6 of 12);
+@include breakpoint($alpha) {
+  .one-fourth {
+    @include gallery(6 of 12);
+  }
 }
 
-.one-third {
-  @include gallery(4 of 12);
+@include breakpoint($beta) {
+  .one-fourth {
+    @include gallery(4 of 12);
+  }
 }
 
-.one-fourth {
-  @include gallery(3 of 12);
+@include breakpoint($charlie) {
+  .one-half {
+    @include gallery(6 of 12);
+  }
+
+  .one-third {
+    @include gallery(4 of 12);
+  }
+
+  .one-fourth {
+    @include gallery(3 of 12);
+  }
 }
 
+.text-center {
+  text-align: center;
+}
 
 // Header
 .header {
@@ -131,7 +150,7 @@ blockquote {
 }
 
 .container--spaced {
-    padding: $spacing-large 15px;
+    padding: 0 15px;
 }
 
 .voices {
@@ -181,6 +200,8 @@ blockquote {
     background-color: $color-primary;
     border-bottom: 1px solid $color-secondary;
 
+  padding-bottom: $spacing-large;
+
     text-align: center;
     color: white;
     font-size: 18px;
@@ -192,10 +213,12 @@ blockquote {
 
 .hero__title {
     color: white;
+  font-size: 36px;
 }
 
 .hero__content {
     margin-bottom: $spacing-large;
+  font-size: 18px;
 }
 
 .button {
@@ -256,19 +279,33 @@ blockquote {
 
 .petition__quote {
   background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+  border-left: 5px solid #eee;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.5em 1em;
 }
 
-.petition__quote:before {
-  color: #ccc;
+blockquote {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+blockquote:before,
+blockquote:after {
+  color: $color-primary;
+  font-size: 3em;
+  line-height: 0;
+  vertical-align: -0.5em;
+}
+
+blockquote:before {
   content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
   margin-right: 0.25em;
-  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  content: close-quote;
+  margin-left: 0.25em;
 }
 
 .petition__quote figcaption {
