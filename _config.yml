@@ -4,6 +4,8 @@ destination:  ./_site
 # Site info
 name: Snowsport for Sheffield
 
+url: http://timble.github.io/www.snowsportforsheffield.co.uk
+
 # We don't want to publish some files
 exclude: [
   '_scss',

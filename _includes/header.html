@@ -3,7 +3,7 @@
     <head>
         <title>Snowsport for Sheffield</title>
         {% include metadata.html %}
-        <link rel="stylesheet" href="/css/style.css?{{'now' | date: '%s'}}">
+        <link rel="stylesheet" href="{{ site.url }}/css/style.css?{{'now' | date: '%s'}}">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
     </head>
     <body class="no-js">
@@ -12,8 +12,8 @@
     <div class="header">
         <div class="header__content">
             <div class="logo">
-                <a href="/">
-                    <img src="/images/snowsport-for-sheffield.png" alt="Snowsport for Sheffield logo">
+                <a href="{{ site.url }}/">
+                    <img src="{{ site.url }}/images/snowsport-for-sheffield.png" alt="Snowsport for Sheffield logo">
                 </a>
             </div>
         </div>
