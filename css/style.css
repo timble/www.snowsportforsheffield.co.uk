@@ -647,7 +647,8 @@ blockquote {
 
 .hero__title {
   color: white;
-  font-size: 36px; }
+  font-size: 36px;
+  margin-top: 36px; }
 
 .hero__content {
   margin-bottom: 48px;
