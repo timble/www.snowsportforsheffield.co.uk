@@ -30,10 +30,24 @@ module.exports = function(grunt) {
             }
         },
 
+        // Uglify
+        uglify: {
+            options: {
+                soureMap: true
+            },
+            build: {
+                files: {
+                    'js/scripts.js': [
+                        '_scripts/lazy-embed.js'
+                    ]
+                }
+            }
+        },
+
         // Sass
         sass: {
             options: {
-                'outputStyle': 'compressed'
+                //'outputStyle': 'compressed'
             },
             main: {
                 files: [{
@@ -90,6 +104,17 @@ module.exports = function(grunt) {
                     atBegin: true
                 }
             },
+            uglify: {
+                files: [
+                    // Including
+                    '_scripts/*.js'
+                ],
+                tasks: ['uglify', 'copy:js'], // Compile
+                options: {
+                    interrupt: false,
+                    atBegin: true
+                }
+            },
             jekyll: {
                 files: [
                     // Including
@@ -102,6 +127,7 @@ module.exports = function(grunt) {
                     '_config.yml',
                     '_config.dev.yml',
                     'index.html',
+                    'media.html',
                     'petition.html'
                 ],
                 tasks: ['shell:jekyllBuild'],

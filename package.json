@@ -8,6 +8,7 @@
         "grunt-browser-sync": "latest",
         "grunt-contrib-watch": "latest",
         "grunt-contrib-copy": "latest",
+        "grunt-contrib-uglify": "latest",
         "grunt-sass": "latest",
         "grunt-shell": "latest",
         "jit-grunt": "latest"

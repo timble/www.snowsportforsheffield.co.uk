@@ -1,5 +1,5 @@
-<h2>{{ site.data.petition | size}} people signed our petition!</h2>
-<div class="petition row">
+<h2>Sign our petition!</h2>
+<div class="petition group">
     {% assign petitions = site.data.petition | reverse  %}
     {% for petition in petitions %}
 
@@ -27,7 +27,7 @@
 
 {% if include.limit != nil %}
 <p class="text-center">
-<a class="button" href="http://www.ipetitions.com/petition/snow-sport-for-sheffield">Sign our petition</a> or
-<a href="{{ site.url }}/petition.html">Read all {{ site.data.petition | size}} entries</a>
+<a class="button" href="http://www.ipetitions.com/petition/snow-sport-for-sheffield">Sign our petition here</a> or
+<a style="white-space: nowrap" href="{{ site.url }}/petition.html">Read all {{ site.data.petition | size}} entries</a>
 </p>
 {% endif %}

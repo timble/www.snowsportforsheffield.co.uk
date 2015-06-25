@@ -1,4 +1,4 @@
-domain: localhost:7669
+url: NULL
 
 compress_html:
   ignore:

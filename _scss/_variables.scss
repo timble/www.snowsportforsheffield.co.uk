@@ -2,6 +2,9 @@ $font: 'Open Sans', 'Helvetica', Arial, sans-serif;
 
 $color-primary: #2089C7;
 $color-primary-light: lighten($color-primary, 15%);
+$color-primary-dark: darken($color-primary, 15%);
+$color-primary-darker: darken($color-primary, 25%);
+$color-primary-darkest: darken($color-primary, 35%);
 
 $color-secondary: #0B3147;
 $color-secondary-dark: darken($color-secondary, 15%);
@@ -12,8 +15,9 @@ $color-type: #333333;
 $spacing: 24px;
 $spacing-large: 48px;
 
-$maxwidth: 800px;
+$maxwidth: 850px;
 
+$zero: 320px;
 $alpha: 400px;
 $beta: 600px;
 $charlie: 768px;
@@ -26,3 +30,7 @@ $susy: (
   gutters: $gutter-width/4em,
   gutter-position: before
 );
+
+$color-twitter: #55ACEE;
+$color-email: #F58D32;
+$color-facebook: #3b5998;

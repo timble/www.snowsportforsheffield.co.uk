@@ -1,0 +1,46 @@
+testimonials:
+  - title: Ed Blomfield
+    channel: vimeo
+    id: 91102705
+    thumbnail: 470453875
+    description: Editor of Whitelines Snowboard Magazine.
+
+  - title: Mr Motivator
+    channel: youtube
+    id: 3fQSwS33p4s
+    description: Derrick Errol Evans, better known as "Mr. Motivator", is a Jamaican-born British exercise instructor.
+
+  - title: Dom Harington
+    channel: youtube
+    id: 9aljEJbmUJw
+    description: Olympian Dom Harington is one of the UK’s most successful half pipe riders, winning 4 British Championship titles.
+
+  - title: Ed Leigh
+    channel: youtube
+    id: cJ_EjDnFCes
+    description: BBC snowboard correspondent, commentator and tall story teller who loves a roll, slide and a kick.
+
+  - title: Becky Hammond
+    channel: youtube
+    id: sjz837gkNx8
+    description: Becky is one of the UK’s top freestyle skiers and has been a massive part of the recent boom in women’s slopestyle and half-pipe in the run up to the Sochi 2014 Olympics.
+
+  - title: Andy Bennett
+    channel: youtube
+    id: 0kydvyN7PUk
+    description: Adny won the Verbier and Saas-Fee Ride as well as the British Championships several times in Big Air, Slopestyle and Halfpipe.
+
+promotional:
+  - title: Red Run
+    channel: vimeo
+    id: 128187513
+    thumbnail: 519708174
+
+  - title: Documentary
+    channel: youtube
+    id: KATwuJGe_xE
+
+facebook:
+  - title: BBC Look North - Red Run
+    channel: facebook
+    id: /bbcsheffield/videos/vb.213327662012855/1006113816067565/?type=1

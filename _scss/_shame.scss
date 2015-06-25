@@ -14,6 +14,7 @@ h1, h2, h3 {
   color: $color-primary;
   margin: 0 0 .65em;
   font-weight: 400;
+  line-height: 1.25em;
 
   &:last-child {
     margin-bottom: 0;
@@ -21,9 +22,12 @@ h1, h2, h3 {
 }
 
 h2 {
-  text-align: center;
-  font-size: 36px;
+  font-size: 2.25em;
   margin: $spacing-large * 1.5 0 $spacing-large;
+
+  @include breakpoint($beta) {
+    text-align: center;
+  }
 }
 
 p {
@@ -32,7 +36,7 @@ p {
 
 body {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   font-family: $font;
 }
 
@@ -42,11 +46,11 @@ blockquote {
   padding: 0;
 }
 
-.row {
+.group {
   @include container;
 }
 
-@include breakpoint($alpha) {
+@include breakpoint($zero) {
   .one-fourth {
     @include gallery(6 of 12);
   }
@@ -155,7 +159,7 @@ blockquote {
 }
 
 .teaser {
-
+  border-bottom: 1px solid $color-secondary;
 }
 
 .hero {
@@ -169,7 +173,7 @@ blockquote {
     font-size: 18px;
 
     .container {
-        max-width: 600px;
+        max-width: 700px;
     }
 }
 
@@ -179,24 +183,44 @@ blockquote {
 }
 
 .hero__content {
-    margin-bottom: $spacing-large;
-  font-size: 18px;
+  margin-bottom: $spacing-large;
+  font-size: 1.15em;
+  line-height: 1.45em;
 }
 
 .button {
-    background-color: white;
-    border-radius: 6px;
-    border: 1px solid $color-secondary;
+  display: inline-block;
 
-    padding: 8px 16px 8px 26px;
+  background-color: $color-primary;
+  border-radius: 6px;
+  border: 1px solid $color-primary-dark;
+  color: white;
 
-    text-decoration: none;
+  padding: 8px 16px 8px 26px;
+  margin-bottom: $spacing / 2;
+
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    border: 1px solid $color-primary-darker;
+  }
 
   @include psuedo(after) {
-    @include arrow(right, 6px, $color-primary);
+    @include arrow(right, 6px, white);
     left: 10px;
     top: 50%;
     margin-top: -5px;
+  }
+}
+
+.button--alternative {
+  background-color: $color-primary-dark;
+  border: 1px solid $color-primary-darker;
+
+  &:hover {
+    background-color: $color-primary-darker;
+    border: 1px solid $color-primary-darkest;
   }
 }
 
@@ -284,7 +308,7 @@ blockquote:after {
 }
 
 .channel {
-  @include breakpoint($alpha) {
+  @include breakpoint($zero) {
     @include gallery(4 of 12);
   }
 
@@ -300,38 +324,38 @@ blockquote:after {
 
   &__item--email {
     &, &:visited {
-      background: lighten(#F58D32, 25%);
-      color: black;
-      border-color: #F58D32;
-    }
-    &:hover {
       background: #F58D32;
       border-color: darken(#F58D32, 20%);
       color: white;
     }
+    &:hover {
+      background: lighten(#F58D32, 25%);
+      border-color: #F58D32;
+      color: black;
+    }
   }
   &__item--twitter {
     &, &:visited {
-      background: lighten(#55ACEE,25%);
-      color: black;
-      border-color: #55ACEE;
-    }
-    &:hover {
       background: #55ACEE;
       border-color: darken(#55ACEE,20%);
       color: white;
     }
+    &:hover {
+      background: lighten(#55ACEE,25%);
+      border-color: #55ACEE;
+      color: black;
+    }
   }
   &__item--facebook {
     &, &:visited {
-      background: lighten(#3b5998,35%);
-      color: black;
-      border-color: lighten(#3b5998,10%);
-    }
-    &:hover {
       background: #3b5998;
       border-color: darken(#3b5998,20%);
       color: white;
+    }
+    &:hover {
+      background: lighten(#3b5998,35%);
+      border-color: lighten(#3b5998,10%);
+      color: black;
     }
   }
 }
@@ -355,4 +379,43 @@ screen and (max-device-width: 1024px) and (orientation: portrait) {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
+}
+
+.media__item {
+  margin-bottom: $spacing-large;
+  
+  @include breakpoint($beta) {
+    display: flex;
+  }
+}
+
+.media__information {
+  @include breakpoint($beta) {
+    @include span(first 6 of 12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.media__embed {
+  @include breakpoint($beta) {
+    @include span(6 of 12);
+  }
+}
+
+.media__title {
+  margin-bottom: $spacing;
+  font-size: 1.5em;
+}
+
+.youtube-player { display: block; width: 100%; /* assuming that the video has a 16:9 ratio */ padding-bottom: 56.25%; overflow: hidden; position: relative; width: 100%; height: 100%; cursor: hand; cursor: pointer; display: block; }
+img.youtube-thumb { bottom: 0; display: block; left: 0; margin: auto; max-width: 100%; width: 100%; position: absolute; right: 0; top: 0; height: auto }
+div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url("http://i.imgur.com/TxzC70f.png") no-repeat; }
+#youtube-iframe { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+
+.contact {
+  background-color: $color-primary;
+  border-top: 1px solid $color-secondary;
 }
