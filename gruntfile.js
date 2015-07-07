@@ -30,6 +30,19 @@ module.exports = function(grunt) {
             }
         },
 
+        // Autoprefixer
+        autoprefixer: {
+            options: {
+                browsers: ['> 5%', 'last 2 versions', 'ie 11', 'ie 10', 'ie 9']
+            },
+            files: {
+                expand: true,
+                flatten: true,
+                src: 'css/*.css',
+                dest: 'css/'
+            }
+        },
+
         // Uglify
         uglify: {
             options: {
@@ -47,11 +60,12 @@ module.exports = function(grunt) {
         // Sass
         sass: {
             options: {
-                //'outputStyle': 'compressed'
+                'outputStyle': 'compressed'
             },
             main: {
                 files: [{
-                    'css/style.css': '_scss/style.scss'
+                    'css/style.css': '_scss/style.scss',
+                    'css/ie.css': '_scss/ie.scss'
                 }]
             }
         },
@@ -98,7 +112,7 @@ module.exports = function(grunt) {
                     '_scss/style.scss',
                     '_scss/**/*.scss'
                 ],
-                tasks: ['sass', 'copy:css'],
+                tasks: ['sass', 'autoprefixer', 'copy:css'],
                 options: {
                     interrupt: false,
                     atBegin: true

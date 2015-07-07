@@ -6,6 +6,11 @@
         <link rel="stylesheet" href="{{ site.url }}/css/style.css?{{'now' | date: '%s'}}">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
 
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="{{ site.url }}/css/ie.css?{{'now' | date: '%s'}}">
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
         <link rel="shortcut icon" type="image/ico" href="{{ site.url }}/images/favicon.ico">
 
         {% if site.url == 'www.snowsportforsheffield.co.uk' %}
@@ -21,7 +26,7 @@
         {% endif %}
     </head>
     <body class="no-js">
-    <script type="text/javascript">function hasClass(e,t){return e.className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))}var el=document.body;var cl="no-js";if(hasClass(el,cl)){var reg=new RegExp("(\\s|^)"+cl+"(\\s|$)");el.className=el.className.replace(reg," js-enabled")}</script>
+    <script type="text/javascript">function hasClass(e,t){return e.className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))}var el=document.body;var cl="no-js";if(hasClass(el,cl)){var reg=new RegExp("(\\s|^)"+cl+"(\\s|$)");el.className=el.className.replace(reg,"js-enabled")}</script>
 
     <div class="header">
         <div class="header__content">

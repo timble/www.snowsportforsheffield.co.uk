@@ -5,6 +5,7 @@
     "author": "Timble",
     "devDependencies": {
         "grunt": "latest",
+        "grunt-autoprefixer": "latest",
         "grunt-browser-sync": "latest",
         "grunt-contrib-watch": "latest",
         "grunt-contrib-copy": "latest",
