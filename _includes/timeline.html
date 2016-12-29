@@ -1,0 +1,32 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/timeline.css" rel="stylesheet"/>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/20e81c4f79.js"></script>
+
+<div class="container">
+    <div class="page-header">
+        <h1 id="timeline">Timeline</h1>
+    </div>
+    <ul class="timeline">
+        {% assign dates = site.data.timeline.dates %}
+        {% for date in dates %}
+        <li>
+            <div class="timeline-badge {{ date.class }}"><i class="fa fa-{{ date.icon }}" aria-hidden="true"></i></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading-{{ date.class }}">
+                    <h4 class="timeline-title">{{ date.header }}</h4>
+                </div>
+                <div class="timeline-body">
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>{{ date.date }}</small></p>
+
+                    <p>{{ date.body }} </p>
+
+                    {{ date.embed }}
+
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

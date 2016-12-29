@@ -1,17 +1,17 @@
 {
-    "name": "snowsportforsheffield",
-    "version": "0.0.1",
-    "description": "Static pages for snowsportforsheffield.co.uk",
-    "author": "Timble",
-    "devDependencies": {
-        "grunt": "latest",
-        "grunt-autoprefixer": "latest",
-        "grunt-browser-sync": "latest",
-        "grunt-contrib-watch": "latest",
-        "grunt-contrib-copy": "latest",
-        "grunt-contrib-uglify": "latest",
-        "grunt-sass": "latest",
-        "grunt-shell": "latest",
-        "jit-grunt": "latest"
-    }
+  "name": "snowsportforsheffield",
+  "version": "0.0.1",
+  "description": "Static pages for snowsportforsheffield.co.uk",
+  "author": "Timble",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-browser-sync": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-sass": "^2.0.0",
+    "grunt-shell": "latest",
+    "jit-grunt": "latest"
+  }
 }
