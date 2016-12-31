@@ -1,0 +1,46 @@
+---
+layout: homepage
+---
+
+<h2>Our key objectives</h2>
+<div class="group">
+    {% assign partners = site.data.partners | sort:"name"  %}
+    {% for objective in site.data.objectives %}
+    <div class="one-half">
+        <h3>{{ objective.title }}</h3>
+        <p>{{ objective.description }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<h2>Our supporters</h2>
+<div class="group">
+{% assign testimonials = site.data.media.testimonials | sort:"title" %}
+{% for item in testimonials %}
+<div class="media__item">
+    <div class="media__information">
+        <h3 class="media__title">{{ item.title }}</h3>
+
+        {% if item.description != nil %}
+        <p>{{ item.description }}</p>
+        {% endif %}
+    </div>
+
+    <div class="media__embed">
+        <div class="embed-container">
+            {% if item.channel == 'youtube' %}
+            <div class="youtube-player" data-id="{{ item.id }}"></div>
+            {% endif %}
+
+            {% if item.channel == 'vimeo' %}
+            <div class="vimeo-player" data-id="{{ item.id }}" data-thumbnail="{{ item.thumbnail }}"></div>
+            {% endif %}
+
+            {% if item.channel == 'facebook' %}
+            <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="1" data-href="{{ item.id }}"></div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>

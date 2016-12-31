@@ -30,6 +30,33 @@ module.exports = function(grunt) {
             }
         },
 
+        // Autoprefixer
+        autoprefixer: {
+            options: {
+                browsers: ['> 5%', 'last 2 versions', 'ie 11', 'ie 10', 'ie 9']
+            },
+            files: {
+                expand: true,
+                flatten: true,
+                src: 'css/*.css',
+                dest: 'css/'
+            }
+        },
+
+        // Uglify
+        uglify: {
+            options: {
+                soureMap: true
+            },
+            build: {
+                files: {
+                    'js/scripts.js': [
+                        '_scripts/lazy-embed.js'
+                    ]
+                }
+            }
+        },
+
         // Sass
         sass: {
             options: {
@@ -37,7 +64,9 @@ module.exports = function(grunt) {
             },
             main: {
                 files: [{
-                    'css/style.css': '_scss/style.scss'
+                    'css/style.css': '_scss/style.scss',
+                    'css/ie.css': '_scss/ie.scss',
+                    'css/timeline.css': '_scss/timeline.scss'
                 }]
             }
         },
@@ -84,7 +113,18 @@ module.exports = function(grunt) {
                     '_scss/style.scss',
                     '_scss/**/*.scss'
                 ],
-                tasks: ['sass', 'copy:css'],
+                tasks: ['sass', 'autoprefixer', 'copy:css'],
+                options: {
+                    interrupt: false,
+                    atBegin: true
+                }
+            },
+            uglify: {
+                files: [
+                    // Including
+                    '_scripts/*.js'
+                ],
+                tasks: ['uglify', 'copy:js'], // Compile
                 options: {
                     interrupt: false,
                     atBegin: true
@@ -101,7 +141,10 @@ module.exports = function(grunt) {
                     'media/*.*',
                     '_config.yml',
                     '_config.dev.yml',
-                    'index.md'
+                    'index.html',
+                    'media.html',
+                    'petition.html',
+                    'highlights.html'
                 ],
                 tasks: ['shell:jekyllBuild'],
                 options: {

@@ -13,42 +13,69 @@ a {
 h1, h2, h3 {
   color: $color-primary;
   margin: 0 0 .65em;
+  font-weight: 400;
+  line-height: 1.25em;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+h2 {
+  font-size: 2.25em;
+  margin: $spacing-large * 1.5 0 $spacing-large;
+  text-align: center;
 }
 
 p {
   margin: 0 0 $spacing;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 body {
   font-size: 16px;
-  line-height: 24px;
-  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5em;
+  font-family: $font;
 }
 
-.row {
+figure,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.group {
   @include container;
 }
 
-.one-half {
-  @include gallery(6 of 12);
+@include breakpoint($zero) {
+  .one-fourth {
+    @include gallery(6 of 12);
+  }
 }
 
-.one-third {
-  @include gallery(4 of 12);
+@include breakpoint($beta) {
+  .one-fourth {
+    @include gallery(4 of 12);
+  }
 }
 
-.one-fourth {
-  @include gallery(3 of 12);
+@include breakpoint($charlie) {
+  .one-half {
+    @include gallery(6 of 12);
+  }
+
+  .one-third {
+    @include gallery(4 of 12);
+  }
+
+  .one-fourth {
+    @include gallery(3 of 12);
+  }
 }
 
+.text-center {
+  text-align: center;
+}
 
 // Header
 .header {
@@ -125,87 +152,73 @@ body {
 }
 
 .container--spaced {
-    padding: $spacing-large 15px;
-}
-
-.voices {
-  margin-bottom: $spacing;
-
-  blockquote {
-    @include reset;
-    background: #EFEFEF;
-    padding: 1em;
-    margin: 3em 0;
-    quotes: "\201C""\201D""\2018""\2019";
-    position: relative;
-
-    &:before,
-    &:after {
-      display: block;
-      position: absolute;
-      font-size: 60px;
-      line-height: 1em;
-      color: $color-primary;
-      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    }
-
-    &:before {
-      content: open-quote;
-      bottom: 100%;
-    }
-
-    &:after {
-      content: close-quote;
-      top: 100%;
-      right: 0;
-    }
-  }
-}
-
-.add-your-voice {
-  position: relative;
-  top: -2em;
+    padding: 0 15px;
 }
 
 .teaser {
-
+  border-bottom: 1px solid $color-secondary;
 }
 
 .hero {
     background-color: $color-primary;
     border-bottom: 1px solid $color-secondary;
 
+  padding-bottom: $spacing-large;
+
     text-align: center;
     color: white;
     font-size: 18px;
 
     .container {
-        max-width: 600px;
+        max-width: 700px;
     }
 }
 
 .hero__title {
     color: white;
+  font-size: 36px;
+  margin-top: $spacing * 1.5;
 }
 
 .hero__content {
-    margin-bottom: $spacing-large;
+  margin-bottom: $spacing-large;
+  font-size: 1.15em;
+  line-height: 1.45em;
 }
 
 .button {
-    background-color: white;
-    border-radius: 6px;
-    border: 1px solid $color-secondary;
+  display: inline-block;
 
-    padding: 8px 16px 8px 26px;
+  background-color: $color-primary;
+  border-radius: 6px;
+  border: 1px solid $color-primary-dark;
+  color: white;
 
-    text-decoration: none;
+  padding: 8px 16px 8px 26px;
+  margin-bottom: $spacing / 2;
+
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    border: 1px solid $color-primary-darker;
+  }
 
   @include psuedo(after) {
-    @include arrow(right, 6px, $color-primary);
+    @include arrow(right, 6px, white);
     left: 10px;
     top: 50%;
     margin-top: -5px;
+  }
+}
+
+.button--alternative {
+  background-color: $color-primary-dark;
+  border: 1px solid $color-primary-darker;
+
+  &:hover {
+    background-color: $color-primary-darker;
+    border: 1px solid $color-primary-darkest;
   }
 }
 
@@ -228,6 +241,10 @@ body {
   font: 16px/1 Arial sans-serif;        /* <-- reset the font property */
 }
 
+.petition__quote {
+  margin-bottom: $spacing;
+}
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -243,3 +260,156 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.petition__quote {
+  background: #f9f9f9;
+  border-left: 5px solid #eee;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.5em 1em;
+}
+
+blockquote {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+blockquote:before,
+blockquote:after {
+  color: $color-primary;
+  font-size: 2em;
+  line-height: 0;
+  vertical-align: -0.5em;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+blockquote:before {
+  content: open-quote;
+  margin-right: 0.25em;
+}
+
+blockquote:after {
+  content: close-quote;
+  margin-left: 0.25em;
+}
+
+.petition__quote figcaption {
+  margin-top: $spacing / 2;
+  color: #666;
+  text-align: right;
+  font-size: 14px;
+}
+
+.channels {
+  @include clearfix;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.channel {
+  display: inline-block;
+  text-align: center;
+
+  &__item {
+    display: block;
+    padding: 10px 0;
+    margin: 0 10px;
+    border: 2px solid #888;
+    width: 120px;
+    transition: all .15s ease-in-out;
+    margin-bottom: $spacing;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &__item--email {
+    &, &:visited {
+      border-color: $color-email;
+      color: $color-email;
+    }
+    &:hover {
+      background: $color-email;
+      color: white;
+    }
+  }
+  &__item--twitter {
+    &, &:visited {
+      border-color: $color-twitter;
+      color: $color-twitter;
+    }
+    &:hover {
+      background: $color-twitter;
+      color: white;
+    }
+  }
+  &__item--facebook {
+    &, &:visited {
+      border-color: $color-facebook;
+      color: $color-facebook;
+    }
+    &:hover {
+      background: $color-facebook;
+      color: white;
+    }
+  }
+}
+
+.grayscale {
+  max-width: 100%;
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all .2s ease; /* Fade to color for Chrome and Safari */
+  backface-visibility: hidden; /* Fix for transition flickering in Firefox */
+
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+
+// No grayscale for iphone and ipad
+@media screen and (max-device-width: 1024px) and (orientation: landscape),
+screen and (max-device-width: 1024px) and (orientation: portrait) {
+  .grayscale {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+
+.media__item {
+  margin-bottom: $spacing-large;
+  
+  @include breakpoint($beta) {
+    display: flex;
+  }
+}
+
+.media__information {
+  @include breakpoint($beta) {
+    @include span(first 6 of 12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.media__embed {
+  @include breakpoint($beta) {
+    @include span(6 of 12);
+  }
+}
+
+.media__title {
+  margin-bottom: $spacing;
+  font-size: 1.5em;
+}
+
+.youtube-player { display: block; width: 100%; /* assuming that the video has a 16:9 ratio */ padding-bottom: 56.25%; overflow: hidden; position: relative; width: 100%; height: 100%; cursor: hand; cursor: pointer; display: block; }
+img.youtube-thumb { bottom: 0; display: block; left: 0; margin: auto; max-width: 100%; width: 100%; position: absolute; right: 0; top: 0; height: auto }
+div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url("http://i.imgur.com/TxzC70f.png") no-repeat; }
+#youtube-iframe { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }

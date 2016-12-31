@@ -1,0 +1,24 @@
+{% include header.html %}
+
+<div class="hero">
+    <div class="container container--spaced">
+        {% include hero.html %}
+    </div>
+</div>
+
+<div class="teaser">
+    {% include teaser.html %}
+</div>
+
+<div class="container container--spaced">
+    <div class="content">
+        {{ content }}
+    </div>
+
+    {% include petition.html limit="6" %}
+    {% include partners.html %}
+</div>
+
+{% include contact.html %}
+
+{% include footer.html %}
