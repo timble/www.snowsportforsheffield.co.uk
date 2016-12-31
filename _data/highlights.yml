@@ -1,0 +1,106 @@
+dates:
+  - icon: facebook-square
+    class: primary
+    date: 03 March 2014
+    header: Public facebook group created
+    body: Snowsports for Sheffield was born out of a closed Facebook group made up of past workers and visitors to the Sheffield Ski Village. As a result of Team GB's performance in Sochi and the fact many of these athletes had trained and competed at the Ski Village we decided we should do something about it!
+    embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F10152239750620801&width=auto" width="100%" height="354" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+  - icon: check
+    class: warning
+    date: 07 March 2014
+    header: Online petition makes 3000 signatures
+    body: After only a few days being online, our petition already manages to gather 3000 signatures! Amazing
+    embed:
+
+  - icon: info-circle
+    class:
+    date: 13 March 2014
+    header: Our new website launches
+    body: We launch version 1 of our website
+    embed: <img src="images/highlights/snowsports-website-vr1.png" alt="version 1 of our website" title="version 2 of our website" class="img img-responsive"/>
+
+  - icon: youtube
+    class: danger
+    date: 14 March 2014
+    header: Video messages of support for Snowsport for Sheffield
+    body: From Katie Summerhayes, James and Rob Machon, Andy Bennet, Ed Leigh, Dom Harington, Ed Blomfield, Mr Motivator and Eddie the Eagle Edwards
+    embed: <div class="youtube-player" data-id="cJ_EjDnFCes"></div>
+
+  - icon: info-circle
+    class:
+    date: 24 March 2014
+    header: Snowsports For Sheffield meet with Sheffield City Council
+    body: Ahead of press launch Al Bister and Paul Yiend met with Sheffield City Council and both parties agreed that they wanted to see the ski slope reinstated as soon as possible. The council assured us they would do everything they could to get the site lease back off the current owner.
+    embed: <img src="images/highlights/AlAndPaul.jpg" alt="Al and Paul at the Town Hall" title="Al and Paul at the Town Hall" class="img img-responsive"/>
+
+
+  - icon: facebook-square
+    class: primary
+    date: 26 March 2014
+    header: Snowsports For Sheffield Press Launch
+    body: Snowsports for Sheffield kicks off it's campaign with a Press Launch hosted by the Forum and guest speakers including Al Bister, Terry Di Stasi Director of Business Development, and Snowsport For England.
+    embed: <iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="100%" height="400" src="https://prezi.com/embed/6dr1b_2xwo3s/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=1&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI5eXZGSlVNQWUyUDVpaWovNGYyU0ZpY0FBPT0&amp;landing_sign=SdKLA9e8Yi4g--Qkm6bFgTaR-BstcIG5H3eCRqQ-2S8"></iframe>
+
+  - icon: facebook-square
+    class: primary
+    date: 27 March 2014
+    header: Press coverage of our event
+    body:
+    embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F10152286496165801&width=auto" width="100%" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+  - icon: youtube
+    class: danger
+    date: 7 April 2014
+    header: Mr Motivator supports Snowsports For Sheffield
+    body:
+    embed: <div class="youtube-player" data-id="3fQSwS33p4s"></div>
+
+  - icon: facebook-square
+    class: primary
+    date: 14 May 2014
+    header: Lease holder's ideas put on ice!
+    body: The lease holder applied to the Sheffield City Council to allow planning permission to pull all the slope material and rubbish into a big landfill at the bottom of the slope. By doing so the topography of the site would have fundamentally changed. Perfect for building homes on.
+    embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F723623974355194&width=auto" width="100%" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+  - icon: facebook-square
+    class: primary
+    date: 3 June 2014
+    header: We beat the Planning Application!
+    body: The next meeting followed a on-site inspection of the Ski Village and careful examination of the proposed plans. The result was the council recommended that the lease holder's plan be approved. It was only after Snowsports' passionate defence of the slope the council voted unanimously to reject these plans.
+    embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F733845643333027&width=auto" width="100%" height="507" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+  - icon: check
+    class: warning
+    date: 28 May 2015
+    header: We reach our target of 5000 signatures!
+    body:
+    embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F911119562272300&width=auto" width="100%" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+  - icon: facebook-square
+    class: primary
+    date: 1 June 2015
+    header: Terry Di Stassi From the Snowsports for Sheffield on BBC Radio Sheffield
+    body:
+    embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F913675958683327%3A0&width=500" width="500" height="466" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+  - icon: facebook-square
+    class: primary
+    date: 1 June 2015
+    header: Brand 'new mobile first' website
+    body: Big thanks go out to <a href="http://timble.net">http://timble.net</a> for an awesome website, a lot of love and care went into creating this this, many thanks to the team
+    embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F937652189619037&width=auto" width="100%" height="521" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+  - icon: info-circle
+    class:
+    date: 18 August 2016
+    header: Rumours circulate of the lease being handed back
+    body: We start to hear rumours that the lease holder had given up his plans to redevelop, and returned the lease back to Sheffield City Council.
+    embed:
+
+  - icon: facebook-square
+    class: primary
+    date: 09 December 2016
+    header: Sheffield City Council announce plans to redevelop Sheffield Ski Village
+    body:
+    embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F1281373921913527&width=auto" width="100%" height="418" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>

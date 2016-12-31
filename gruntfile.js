@@ -65,7 +65,8 @@ module.exports = function(grunt) {
             main: {
                 files: [{
                     'css/style.css': '_scss/style.scss',
-                    'css/ie.css': '_scss/ie.scss'
+                    'css/ie.css': '_scss/ie.scss',
+                    'css/timeline.css': '_scss/timeline.scss'
                 }]
             }
         },
@@ -142,7 +143,8 @@ module.exports = function(grunt) {
                     '_config.dev.yml',
                     'index.html',
                     'media.html',
-                    'petition.html'
+                    'petition.html',
+                    'highlights.html'
                 ],
                 tasks: ['shell:jekyllBuild'],
                 options: {
