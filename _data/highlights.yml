@@ -75,7 +75,7 @@ dates:
     date: 28 May 2015
     header: We reach our target of 5000 signatures!
     body:
-    embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F911119562272300&width=500" width="500" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F911119562272300&width=auto" width="100%" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
   - icon: facebook-square
     class: primary
@@ -88,7 +88,7 @@ dates:
     class: primary
     date: 1 June 2015
     header: Brand 'new mobile first' website
-    body: Big thanks go out to <a href="http://timble.net">http://timble.net</a> for an awesome website
+    body: Big thanks go out to <a href="http://timble.net">http://timble.net</a> for an awesome website, a lot of love and care went into creating this this, many thanks to the team
     embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F937652189619037&width=auto" width="100%" height="521" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
   - icon: info-circle
