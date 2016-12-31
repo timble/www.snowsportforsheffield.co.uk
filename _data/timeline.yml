@@ -100,21 +100,14 @@ dates:
 
   - icon: info-circle
     class:
-    date: 18 August 2015
+    date: 18 August 2016
     header: Rumours circulate of the lease being handed back
-    body: We start to hear rumours that the lease holder had given up his plans to redevelop the site. Sources quoted social pressure and a desire to retire being the main reasons for handing the site back to the Sheffield City Council.
+    body: We start to hear rumours that the lease holder had given up his plans to redevelop the site. Social pressure and a desire to retire being the main reasons for handing the site back to the Sheffield City Council.
     embed:
 
   - icon: facebook-square
     class: primary
-    date: 21 July 2015
+    date: 09 December 2016
     header: Sheffield City Council announce plans for 'County Park'
     body:
     embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F1281373921913527&width=auto" width="100%" height="418" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-
-  - icon: facebook-square
-    class:
-    date: sometime again soon!
-    header:
-    body:
-    embed: <img src="images/skivillage-lodge.jpg"/>
