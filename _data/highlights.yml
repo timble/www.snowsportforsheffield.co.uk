@@ -3,7 +3,7 @@ dates:
     class: primary
     date: 03 March 2014
     header: Public facebook group created
-    body: Snowsports for Sheffield was born out of a closed Facebook group made up of past workers and visitors to the Sheffield Ski Village. As a result of Team GB's performance in Sochi and the fact many of these Althetes had trained and competed at the Ski Village we decided we should do something about it!
+    body: Snowsports for Sheffield was born out of a closed Facebook group made up of past workers and visitors to the Sheffield Ski Village. As a result of Team GB's performance in Sochi and the fact many of these athletes had trained and competed at the Ski Village we decided we should do something about it!
     embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F10152239750620801&width=auto" width="100%" height="354" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
   - icon: check
@@ -18,7 +18,7 @@ dates:
     date: 13 March 2014
     header: Our new website launches
     body: We launch version 1 of our website
-    embed: <img src="images/snowsports-website-vr1.png" alt="version 1 of our website" title="version 2 of our website" class="img img-responsive"/>
+    embed: <img src="images/highlights/snowsports-website-vr1.png" alt="version 1 of our website" title="version 2 of our website" class="img img-responsive"/>
 
   - icon: youtube
     class: danger
@@ -32,7 +32,7 @@ dates:
     date: 24 March 2014
     header: Snowsports For Sheffield meet with Sheffield City Council
     body: Ahead of press launch Al Bister and Paul Yiend met with Sheffield City Council and both parties agreed that they wanted to see the ski slope reinstated as soon as possible. The council assured us they would do everything they could to get the site lease back off the current owner.
-    embed: <img src="images/AlAndPaul.jpg" alt="Al and Paul at the Town Hall" title="Al and Paul at the Town Hall" class="img img-responsive"/>
+    embed: <img src="images/highlights/AlAndPaul.jpg" alt="Al and Paul at the Town Hall" title="Al and Paul at the Town Hall" class="img img-responsive"/>
 
 
   - icon: facebook-square
@@ -60,7 +60,7 @@ dates:
     class: primary
     date: 14 May 2014
     header: Lease holder's ideas put on ice!
-    body: The lease holder applied to the Sheffield City Council to allow planning permission to pull all the slope material and rubbish into a big landfill at the bottom of the slope. By doing so the topology of the site would have fundamentally changed. Perfect for building homes on.
+    body: The lease holder applied to the Sheffield City Council to allow planning permission to pull all the slope material and rubbish into a big landfill at the bottom of the slope. By doing so the topography of the site would have fundamentally changed. Perfect for building homes on.
     embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F723623974355194&width=auto" width="100%" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
   - icon: facebook-square
@@ -84,10 +84,10 @@ dates:
     body:
     embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F913675958683327%3A0&width=500" width="500" height="466" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
-  - icon: facebook
+  - icon: facebook-square
     class: primary
     date: 1 June 2015
-    header: Brand new mobile first website
+    header: Brand 'new mobile first' website
     body: Big thanks go out to <a href="http://timble.net">http://timble.net</a> for an awesome website
     embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F937652189619037&width=auto" width="100%" height="521" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
@@ -95,12 +95,12 @@ dates:
     class:
     date: 18 August 2016
     header: Rumours circulate of the lease being handed back
-    body: We start to hear rumours that the lease holder had given up his plans to redevelop the site. Social pressure and a desire to retire being the main reasons for handing the site back to the Sheffield City Council.
+    body: We start to hear rumours that the lease holder had given up his plans to redevelop, and returned the lease back to Sheffield City Council.
     embed:
 
   - icon: facebook-square
     class: primary
     date: 09 December 2016
-    header: Sheffield City Council announce plans for 'County Park'
+    header: Sheffield City Council announce plans to redevelop Sheffield Ski Village
     body:
     embed: <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsnowsportforsheffield%2Fposts%2F1281373921913527&width=auto" width="100%" height="418" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>

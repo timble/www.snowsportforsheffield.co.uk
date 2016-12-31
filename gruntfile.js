@@ -144,7 +144,7 @@ module.exports = function(grunt) {
                     'index.html',
                     'media.html',
                     'petition.html',
-                    'timeline.html'
+                    'highlights.html'
                 ],
                 tasks: ['shell:jekyllBuild'],
                 options: {

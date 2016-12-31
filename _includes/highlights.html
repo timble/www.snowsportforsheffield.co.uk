@@ -5,11 +5,8 @@
 <script src="https://use.fontawesome.com/20e81c4f79.js"></script>
 
 <div class="container">
-    <div class="page-header">
-        <h1 id="timeline">Timeline</h1>
-    </div>
     <ul class="timeline">
-        {% assign dates = site.data.timeline.dates %}
+        {% assign dates = site.data.highlights.dates %}
         {% for date in dates %}
         <li>
             <div class="timeline-badge {{ date.class }}"><i class="fa fa-{{ date.icon }}" aria-hidden="true"></i></div>
